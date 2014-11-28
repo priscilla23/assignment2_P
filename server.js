@@ -1,5 +1,5 @@
 
-// Require Native Node.js Libraries
+//nodeRequire Native Node.js Libraries
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
@@ -16,6 +16,9 @@ app.get('/', function(req, res){
 // Handle Socket Connection
 io.on('connection', function(socket){
   console.log('A User Connected');
+  socket.on("message", function(message){
+      io.emit("postMessage", message)
+  })
 });
 
 // Start Server
