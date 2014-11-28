@@ -9,16 +9,22 @@ body {
   background: #59ABE3;
   display: block;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 8px;
 }
-h1,
-h2 {
+hgroup {
   display: block;
-  margin: 50px 100px;
+  margin: 50px auto;
+  line-height: 15px;
+  width: 400px;
+  text-align: center;
 }
 h1 {
   font-size: 3em;
 }
 h2 {
   font-size: 2em;
+}
+.container {
+  margin-top: 360px;
+  float: right;
 }
