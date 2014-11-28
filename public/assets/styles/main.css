@@ -2,3 +2,8 @@ body {
   font-family: sans-serif;
   color: red;
 }
+.messagebox {
+  height: 400px;
+  width: 400px;
+  background: pink;
+}
